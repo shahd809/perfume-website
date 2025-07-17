@@ -58,33 +58,43 @@
     margin-top: 5px;
     font-size: 18px;
 }
+
+.blog_list_down {
+    position: relative;
+}
 .blog{
-    width: 150px;
+    width: 130px;
     height: 150px;
     background-color: #fff;
     text-align: center;
     padding: 10px 0;
     border-radius: 10px;
-    float: right;
-    margin-right: 50px;
     visibility: hidden;
+    position: absolute;
+    top: 20px; 
+    left : 0;
+    opacity: 0;
 }
-/* تعديلللللللللللللللللللللللللللللللللللللللللللللللللللللللللللل */
-.blog_list{
-    list-style: none;
-}
+
+
 .blog_list li{
-    color: #344885;
+    /* color: #344885; */
     padding: 10px 0;
 }
 .blog_list li a{
     font-size: 20px;
     text-decoration: none;
+    color: #1a2a65;
+    display: block;
+    padding: 10px 0;
+
 }
 .blog_list_down:hover .blog{
     visibility: visible;
+    opacity: 1;
 }
-    
+
+
 
 /* section parent //////////////////////////////////////////////////////////////////// */
 .home_parent{
@@ -418,6 +428,7 @@
     top: 0;
     left: 0;
     background-color: rgb(125, 125, 213);
+    border-radius: 18px;
     opacity: 1;
 
 }
@@ -498,17 +509,28 @@
 .choose_photo{
     margin-top: 70px;
     margin-left: 200px; 
+    position: relative;
+    
 }
 .choose_dots{
-    margin-top: 15px;
-    
+    /* margin-top: 15px; */
+    position: absolute;
+    margin-left: 1050px;
 }
 .cho_dot{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: blue;
-    
+    background-color: rgb(214, 214, 219);
+    float: left;
+    margin-top: 560px;
+    margin-right: 10px;
+}
+.dot1{
+    background-color: #a18cf1;
+}
+.dot2:hover{
+    background-color: #a18cf1;
 }
 /* section  clients //////////////////////////////////////////////////////////////// */
 .clients_parent{
@@ -655,6 +677,7 @@
     transition: 0.5s;
     opacity: 0;
     background-color: rgb(139, 139, 229);
+    border-radius: 8px;
 }
 .pricing_div:hover::after{
     width: 100%;
@@ -823,6 +846,7 @@
     top: 0;
     left: 0;
     background-color: rgb(175, 175, 236);
+    border-radius: 8px;
     opacity: 0;
     transition: 0.5s;
 }
@@ -913,6 +937,7 @@
     top: 0;
     left: 0;
     background-color: rgb(115, 115, 227);
+    border-radius: 8px;
     opacity: 0;
     transition: 0.5s;
 }
